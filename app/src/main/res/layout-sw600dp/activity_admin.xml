@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewNormalAdmin"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNormalAdmin"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewBadAdmin"
+        app:layout_constraintStart_toEndOf="@+id/imageViewGoodAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/kayak_emoji_normal" />
+
+    <ImageView
+        android:id="@+id/imageViewGoodAdmin"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGoodAdmin"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewNormalAdmin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/kayak_emoji_mutlu" />
+
+    <ImageView
+        android:id="@+id/imageViewBadAdmin"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBadAdmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewNormalAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/kayak_emoji_sad" />
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+    <TextView
+        android:id="@+id/textViewGoodAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="İYİ"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGoodPersonelAdmin"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewGoodAdmin"
+        app:layout_constraintStart_toStartOf="@+id/imageViewGoodAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewGoodAdmin" />
+
+    <TextView
+        android:id="@+id/textViewNormalAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="ORTA"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNormalPersonelAdmin"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewNormalAdmin"
+        app:layout_constraintStart_toStartOf="@+id/imageViewNormalAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewNormalAdmin" />
+
+    <TextView
+        android:id="@+id/textViewBadAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="KÖTÜ"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBadPersonelAdmin"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBadAdmin"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBadAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBadAdmin" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Aldığınız hizmetten memnun musunuz?"
+        android:textSize="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewReset"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageViewReset"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_camera_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sıfırla"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewReset"
+        app:layout_constraintStart_toStartOf="@+id/imageViewReset"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewReset" />
+
+    <TextView
+        android:id="@+id/textViewGoodPersonelAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="İYİ PERSONEL"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGoodEgitimAdmin"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewGoodAdmin"
+        app:layout_constraintStart_toStartOf="@+id/imageViewGoodAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGoodAdmin" />
+
+    <TextView
+        android:id="@+id/textViewGoodEgitimAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="İYİ EĞİTİM"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGoodEkipmanAdmin"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewGoodAdmin"
+        app:layout_constraintStart_toStartOf="@+id/imageViewGoodAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGoodPersonelAdmin" />
+
+    <TextView
+        android:id="@+id/textViewGoodEkipmanAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="İYİ EKİPMAN"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewGoodAdmin"
+        app:layout_constraintStart_toStartOf="@+id/imageViewGoodAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGoodEgitimAdmin" />
+
+    <TextView
+        android:id="@+id/textViewNormalPersonelAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+
+        android:text="ORTA PERSONEL"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNormalEgitimAdmin"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewNormalAdmin"
+        app:layout_constraintStart_toStartOf="@+id/imageViewNormalAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNormalAdmin" />
+
+    <TextView
+        android:id="@+id/textViewNormalEkipmanAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+
+        android:text="ORTA EKİPMAN"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewNormalAdmin"
+        app:layout_constraintStart_toStartOf="@+id/imageViewNormalAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNormalEgitimAdmin" />
+
+    <TextView
+        android:id="@+id/textViewNormalEgitimAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+
+        android:text="ORTA EGİTİM"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNormalEkipmanAdmin"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewNormalAdmin"
+        app:layout_constraintStart_toStartOf="@+id/imageViewNormalAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNormalPersonelAdmin" />
+
+    <TextView
+        android:id="@+id/textViewBadEgitimAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="10dp"
+        android:text="KÖTÜ EĞİTİM"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBadEkipmanAdmin"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBadAdmin"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBadAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBadPersonelAdmin" />
+
+    <TextView
+        android:id="@+id/textViewBadEkipmanAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+
+        android:text="KÖTÜ EKİPMAN"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBadAdmin"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBadAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBadEgitimAdmin" />
+
+    <TextView
+        android:id="@+id/textViewBadPersonelAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+
+        android:text="KÖTÜ PERSONEL"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBadEgitimAdmin"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBadAdmin"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBadAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBadAdmin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
